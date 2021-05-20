@@ -45,10 +45,10 @@ return [
     // this is used to call function on configuring a finder as defined here https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/3.0/doc/config.rst
     'finder' => [
         'include'  => [],
-        'exclude'  => [ 'bootstrap', 'vendor', 'storage' ],
-        'name'     => [ '*.php' ],
-        'notname'  => [ '*.blade.php' ],
-        'in'       => __DIR__.'/../../../../',
+        'exclude'  => ['bootstrap', 'vendor', 'storage'],
+        'name'     => ['*.php'],
+        'notname'  => ['*.blade.php'],
+        'in'       => __DIR__ . '/../../../../',
     ];
 ```
 

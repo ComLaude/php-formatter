@@ -91,11 +91,11 @@ return [
     ],
     'finder' => [
         'include' => [],
-        'exclude' => [ 'bootstrap', 'vendor', 'storage', 'triggers' ],
+        'exclude' => [ 'bootstrap', 'vendor', 'storage' ],
         'name'     => [ '*.php' ],
         'notname'  => [ '*.blade.php' ],
         // This assumes this file is in your_app/vendor/comlaude/php-formatter/config/php-formatter.php
         // so it points to your_app/
-        'in'       => [ __DIR__.'/../../../../' ],
+        'in'       => __DIR__.'/../../../../',
     ]
 ];

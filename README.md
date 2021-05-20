@@ -13,13 +13,13 @@ Add the following to your require part within the composer.json:
 ```js
 "comlaude/php-formatter": "^1.0.0"
 ```
-```batch
+```shell
 $ php composer update
 ```
 
 or
 
-```
+```shell
 $ php composer require comlaude/php-formatter
 ```
 
@@ -54,13 +54,13 @@ return [
 
 ## Basic Usage
 
-```
+```shell
 php vendor/bin/php-formatter fix
 ```
 
 ## CI Automation usage
 
-```
+```shell
 php vendor/bin/php-formatter fix -v --dry-run
 ```
 

@@ -1,5 +1,5 @@
 # ComLaude/php-formatter
-Simple PhpAmqpLib wrapper for interaction with RabbitMQ 
+Pre-configured php formatter using php-cs-fixer
 
 [![Latest Stable Version](https://poser.pugx.org/comlaude/php-formatter/v)](//packagist.org/packages/comlaude/php-formatter)
 [![License](https://poser.pugx.org/comlaude/php-formatter/license)](//packagist.org/packages/comlaude/php-formatter)
@@ -44,11 +44,11 @@ return [
     ],
     // this is used to call function on configuring a finder as defined here https://github.com/FriendsOfPHP/PHP-CS-Fixer/blob/3.0/doc/config.rst
     'finder' => [
-        'include' => [],
-        'exclude' => [ 'bootstrap', 'vendor', 'storage' ],
+        'include'  => [],
+        'exclude'  => [ 'bootstrap', 'vendor', 'storage' ],
         'name'     => [ '*.php' ],
         'notname'  => [ '*.blade.php' ],
-        'in'       => [ __DIR__.'/../../../../' ],
+        'in'       => __DIR__.'/../../../../',
     ];
 ```
 

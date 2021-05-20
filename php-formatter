@@ -1,0 +1,17 @@
+<?php
+
+/*
+ * This file is part of ComLaude/php-formatter.
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+$phpCsFixerExecutable = __DIR__.'/../../friendsofphp/php-cs-fixer/php-cs-fixer';
+$phpFormatterConfigFile = __DIR__.'/src/.php-cs-fixer-default.php';
+
+// Take any parameters passed to this script
+$args = array_slice($argv, 1);
+
+// Pass the params to php-cs-fixer, but default to package config file
+exec( "php " . $phpCsFixerExecutable . " " . implode(" ", $args) . " --config=" . $phpFormatterConfigFile);

@@ -1,0 +1,38 @@
+{
+  "name": "comlaude/php-formatter",
+  "description": "Pre-configured php formatter",
+  "keywords": [
+    "php-cs-fixer",
+    "package",
+    "ComLaude"
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/ComLaude/php-formatter/issues",
+    "source": "https://github.com/ComLaude/php-formatter"
+  },
+  "authors": [
+    {
+      "name": "David Krizanic",
+      "email": "david.krizanic@comlaude.com"
+    },
+    {
+      "name": "Alexandre Freire",
+      "email": "alexandre.freire@comlaude.com"
+    }
+  ],
+  "require": {
+    "friendsofphp/php-cs-fixer": "^3.0"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "ComLaude\\PhpFormatter\\": "src/"
+    }
+  },
+  "extra": {},
+  "minimum-stability": "dev",
+  "bin": [
+      "php-formatter"
+  ]
+}

@@ -13,6 +13,15 @@ $phpFormatterConfigFile = __DIR__.'/src/DefaultConfigWrapper.php';
 
 // Take any parameters passed to this script
 $args = array_slice($argv, 1);
+$exitCode = 0;
+$outputArray = [];
 
 // Pass the params to php-cs-fixer, but default to package config file
-exec( "php " . $phpCsFixerExecutable . " " . implode(" ", $args) . " --config=" . $phpFormatterConfigFile);
+$command = "php " . $phpCsFixerExecutable . " " . implode(" ", $args);
+if ($args[0] == 'fix') {
+    $command .= " --config=" . $phpFormatterConfigFile;
+}
+
+// Retain exit code of underlying script and exit with that
+passthru($command, $exitCode);
+exit($exitCode);

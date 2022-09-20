@@ -63,7 +63,7 @@ return [
         'lowercase_keywords' => true,
         'method_chaining_indentation' => true,
         'no_short_bool_cast' => true,
-        'no_trailing_comma_in_singleline_array' => true,
+        'no_trailing_comma_in_singleline' => true,
         'no_unneeded_curly_braces' => true,
         'no_unused_imports' => true,
         'no_useless_else' => true,

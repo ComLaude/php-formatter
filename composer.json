@@ -22,7 +22,7 @@
     }
   ],
   "require": {
-    "friendsofphp/php-cs-fixer": "^3.0"
+    "friendsofphp/php-cs-fixer": "^3.38"
   },
   "require-dev": {},
   "autoload": {
